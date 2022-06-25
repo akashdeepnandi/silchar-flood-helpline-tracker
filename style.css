@@ -1,0 +1,179 @@
+*, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.container > h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #04AA6D;
+}
+
+.updated-at {
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.disclaimer {
+  line-height: 25px;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 1px dashed #cccccc;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.header h3 {
+  font-size: 20px;
+}
+
+.header input {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #333333;
+  min-width: 300px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 18px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.details div {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #cccccc;
+  color: #f00;
+}
+
+.details div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+td .description {
+  color: #111111;
+  font-weight: bold;
+}
+td .name {
+  color: #222222;
+  font-size: 16px;
+}
+td .address, td.address {
+  color: #111111;
+  font-size: 16px;
+}
+td.numbers {
+  font-weight: bold;
+}
+
+td .number-wrapper {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+td .number {
+  color: #111111;
+  display: block;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+td .number-wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.copy-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url("copy.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+footer {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .container > h1 {
+    font-size: 1.2rem;
+  }
+
+  .desktop {
+    visibility: none;
+  }
+
+  .updated-at {
+    font-size: 12px;
+  }
+
+  .disclaimer {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  table td, table th {
+    font-size: 14px;
+  }
+
+  td .name, td .address {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 721px) {
+  .mobile {
+    visibility: hidden;
+  }
+}
