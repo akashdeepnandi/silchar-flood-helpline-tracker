@@ -5,31 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
+    <script defer src="helpine.js"></script>
     <script defer src="app.js"></script>
   </head>
   <body>
     <main class="container">
-      <h1>Silchar Flood Helpline Number Tracker</h1>
-      <p class="disclaimer"><b>Disclaimer: </b> The information below has been collected from several sources, some numbers might not be reachable or accept calls due to
-        various reasons which we might include network issues, heavy call traffic etc. We cannot provide assurance that all these numbers are verfied
-      by us but we have faith in the people of Silchar to provide valid information during such an historic crisis and we are just trying to make the
-      information more easily available. To add more numbers, please mail details at <b>eprobe.io@gmail.com</b></p>
-      <div class="updated-at">Last Updated At: 11:18 PM Jun 25, 2022</div>
+      <header>
+        <h1>Silchar Flood Helpline Number Tracker</h1>
+        <div class="link-table mobile">
+          <a href="#table">Check the Helpline Data &#8595;</a>
+        </div>
+        <section class="disclaimer-wrapper">
+          <p class="disclaimer"><b>Disclaimer: </b> The information below has been collected from several sources, some numbers might not be reachable or accept calls due to
+            various reasons which might include network issues, heavy call traffic etc. We are just trying to make the
+          information more easily available. To add more numbers, please mail details at <b>eprobe.io@gmail.com</b></p>
+          <div class="updated-at">Last Updated At: 03:56 PM Sun 26 Jun, 2022</div>
+        </section>
+      </header>
       <hr />
-      <div class="header">
-        <h3>Helpline Numbers</h3>
-        <input type="text" id="search" name="" value="" placeholder="Search org/name, area, phone number">
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Org/Name</th>
-            <th>Number</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+      <section class="news-time-wrapper">
+        <div class="form-row">
+          <div class="link-wrapper">
+            <a href="https://forms.gle/Qk4EC4BwBfBNC56i6">FILL UP RELIEF FORM HERE!</a>
+            <p>
+              We will send this data to NGO/Org/DC/ASDMA for flood relief
+            </p>
+          </div>
+          <div class="link-wrapper right">
+            <a href="https://docs.google.com/spreadsheets/d/1RdGHnx-zxVPabhA8sGZxWjfgmAvQKbYyd18Ie7O8RxE/edit?usp=drivesdk">
+              Affected Flood Victims Spread Sheet
+            </a>
+            <p>
+              List of the relief requests from the form submissions
+            </p>
+          </div>
+        </div>
+        <div class="source">
+          <h4>Source: <a href="https://newstimebarak.com/">News Time Barak</a></h4>
+          <div class="contact">
+            <span class>Contact number: </span>
+            <span class="copy-icon" onclick="copyToClipboard(7002638951)"></span>
+            <a href="tel:7002638951" class="number"/>
+              7002638951
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="table">
+        <div class="table-wrapper">
+          <h3>Helpline Numbers</h3>
+          <input type="text" id="search" name="" value="" placeholder="Search details, area, phone number">
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th>Number</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
     </main>
     <footer>
       <div class="copyright">

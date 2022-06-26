@@ -7,3 +7,4 @@
 - [x] Render searching results
 - [ ] Sorting of data
 - [ ] Add more data from official sources
+- [ ] If numbers grow more, consider adding a backend
