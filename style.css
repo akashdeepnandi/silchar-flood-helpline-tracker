@@ -1,3 +1,7 @@
+:root {
+  --primary: #04aa6d;
+}
+
 *, :root {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 }
 
 .container {
-  margin: 2rem auto;
+  margin: 0 auto 1rem;
   max-width: 1000px;
   padding: 1rem;
 }
@@ -13,7 +17,7 @@
 header h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #04AA6D;
+  color: var(--primary);
 }
 
 .updated-at {
@@ -28,26 +32,26 @@ header h1 {
 }
 
 .link-table a:link {
-  color: #04AA6D;
+  color: var(--primary);
   font-weight: bold;
   margin-bottom: 1rem;
   text-decoration: none;
 }
 
 .link-table a:hover {
-  color: #04AA6D;
+  color: var(--primary);
   opacity: 0.8;
   text-decoration: underline;
 }
 
 .link-table a:visited {
-  color: #04AA6D;
+  color: var(--primary);
   opacity: 0.8;
   text-decoration: none;
 }
 
 .link-table a:active {
-  color: #04AA6D;
+  color: var(--primary);
   opacity: 0.8;
   text-decoration: underline;
 }
@@ -68,8 +72,30 @@ hr {
   justify-content: space-between;
 }
 
-.table-wrapper h3 {
+h2 {
   font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.contents li, .news li {
+ margin-top: 0.5rem;
+}
+
+nav.container ul, .news ul {
+  padding-left: 1rem;
+}
+
+
+.news-time-wrapper h2 {
+  margin-bottom: 0.5rem;
+}
+
+.news-time-wrapper a, .news a {
+  text-decoration: underline;
 }
 
 .table-wrapper input {
@@ -136,7 +162,7 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -144,7 +170,7 @@ table th {
 .details div {
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #cccccc;
+  /* border-bottom: 1px solid #cccccc; */
   color: #f00;
 }
 
@@ -153,9 +179,17 @@ table th {
   padding-bottom: 0;
   border-bottom: none;
 }
+
+tr.category {
+  text-align: center;
+  font-weight: bold;\
+}
+
 td .description {
   color: #111111;
   font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
 }
 td .name {
   color: #222222;
@@ -240,6 +274,10 @@ footer {
     font-size: 14px;
   }
 
+  .news-time-wrapper h2 {
+    margin-bottom: 0.5rem;
+  }
+
   section .form-row {
     flex-direction: column;
     gap: 0.5rem;
@@ -259,6 +297,14 @@ footer {
 
   .link-wrapper p {
     line-height: 22px;
+  }
+
+  .contents, .news ul {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 16px;
   }
 }
 
