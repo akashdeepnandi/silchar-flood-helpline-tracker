@@ -1,0 +1,320 @@
+:root {
+  --primary: #04aa6d;
+}
+
+*, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto 1rem;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.updated-at {
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.link-table {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.link-table a:link {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.link-table a:hover {
+  color: var(--primary);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.link-table a:visited {
+  color: var(--primary);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.link-table a:active {
+  color: var(--primary);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.disclaimer {
+  line-height: 25px;
+}
+
+hr {
+  margin: 1rem auto;
+  border: 1px dashed #cccccc;
+  max-width: calc(1000px - 1rem);
+}
+
+.table-wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: end;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.contents li, .news li {
+ margin-top: 0.5rem;
+}
+
+nav.container ul, .news ul {
+  padding-left: 1rem;
+}
+
+
+.news-time-wrapper h2 {
+  margin-bottom: 0.5rem;
+}
+
+.news-time-wrapper a, .news a {
+  text-decoration: underline;
+}
+
+.table-wrapper input {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #333333;
+  min-width: 300px;
+}
+
+section .form-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+section .form-row > div {
+  flex: 1;
+  background: #f3f3f3;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+section .link-wrapper.right {
+  text-align: right;
+}
+
+.link-wrapper p {
+  margin-top: 0.5em;
+  font-size: 14px;
+}
+
+.source {
+  margin-top: 1rem;
+}
+
+.contact {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.contact .copy-icon {
+  margin-left: 0.5rem;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 18px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--primary);
+  color: white;
+}
+
+
+.details div {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* border-bottom: 1px solid #cccccc; */
+  color: #f00;
+}
+
+.details div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+tr.category {
+  text-align: center;
+  font-weight: bold;\
+}
+
+td .description {
+  color: #111111;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+}
+td .name {
+  color: #222222;
+  font-size: 16px;
+}
+td .address, td.address {
+  color: #111111;
+  font-size: 16px;
+}
+td.numbers {
+  font-weight: bold;
+}
+
+td .number-wrapper {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  color: #111111;
+  display: block;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+td .number-wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.copy-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url("copy.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+footer {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .container > h1 {
+    font-size: 1.2rem;
+  }
+
+  .desktop {
+    visibility: none;
+  }
+
+  .updated-at {
+    font-size: 12px;
+  }
+
+  .disclaimer {
+    font-size: 14px;
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  table td, table th {
+    font-size: 14px;
+  }
+
+  td .description {
+    font-size: 14px;
+  }
+
+  td .name, td .address {
+    font-size: 14px;
+  }
+
+  .news-time-wrapper {
+    font-size: 14px;
+  }
+
+  .news-time-wrapper h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  section .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .source, .link-wrapper {
+    text-align: center !important; 
+  }
+
+  .contact {
+    justify-content: center;
+  }
+
+  .container {
+    margin-block: 1rem;
+  }
+
+  .link-wrapper p {
+    line-height: 22px;
+  }
+
+  .contents, .news ul {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 721px) {
+  .mobile {
+    visibility: hidden;
+  }
+}
